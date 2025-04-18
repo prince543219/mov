@@ -182,7 +182,7 @@ async def start(client:Client, message):
                             InlineKeyboardButton('Aʙᴏᴜᴛ 💌', callback_data=f'about')
                         ]] 
                         reply_markup = InlineKeyboardMarkup(buttons)
-                        m=await message.reply_sticker("CAACAgUAAxkBAAMHZ7Z8HHWGnnRFupPVBDY-9mRtnRoAAgQAA8EkMTGJ5R1uC7PIEB4E") 
+                        m=await message.reply_sticker("CAACAgUAAx0Ce-9xbwABAmBZZ_9-5WlsUDybGKKTrmGrwmbXHSYAAlwVAALQeAFUf8U-ASV6gu4eBA") 
                         await asyncio.sleep(2)
                         await m.delete()
                         await message.reply_photo(photo=random.choice(START_IMG), caption=script.START_TXT.format(message.from_user.mention, get_status(), message.from_user.id),
